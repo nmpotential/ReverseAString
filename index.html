@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reverse A String</title>
+    <script src="Reverse.js"></script> <!--link to js file -->
+    <link rel="stylesheet" type="text/css" href="style.css"> <!--link to stylesheet -->
+</head>
+<body>
+    <img src="ReverseAstring.png" alt="Nature" class="responsive"> <!--add image header on top -->
+    <div class="rev-style"> <!--select style from stylesheet for body-->
+    <div class="rev-style-heading">Enter a String to Be Reversed</div> <!--select style from stylesheet for heading-->
+    <label ><span>Enter a String:</span><input id="value" type="text" name="reverseMe"></label> <!--create input box using label/span/input tags.
+    id will be used to select using js, type is text and name is ReversMe -->
+    <label ><span>Results:</span> <!--add label for results using span (as we have a style on the label spans so it looks a certain way -->
+        <textarea id="result" name="results" class="textarea-field"></textarea> <!--create textarea for the results where we will hold the reversed string  -->
+    </label>
+    <label><span></span><input onclick="reverseMe()" type="submit" value="Reverse Me" /></label> <!--create submit button empty where span acts as empty placeholder  -->
+        <!--onclick="reverseMe()": Makes sure on click of submit button html calls reverseMe func from js   -->
+
+    </div>
+</body>
+</html>
